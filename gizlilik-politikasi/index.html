@@ -27,23 +27,33 @@
 <body>
 
 <h1>Uzak Doğu'nun Ruhu — Gizlilik Politikası</h1>
-<p class="sub">Son güncelleme: 14 Ağustos 2026 · Geliştirici: SatiricKarma63 · Paket adı: <code>com.satirickarma63.udh</code></p>
+<p class="sub">Son güncelleme: 15 Ağustos 2026 · Geliştirici: SatiricKarma63 · Paket adı: <code>com.satirickarma63.udh</code></p>
 
 <p>Bu gizlilik politikası, SatiricKarma63 tarafından geliştirilen <strong>Uzak Doğu'nun Ruhu</strong>
 mobil oyunu için geçerlidir. Kısaca: <strong>geliştirici hiçbir kişisel verinizi toplamaz, saklamaz
-veya paylaşmaz.</strong> Oyunda isteğe bağlı uygulama içi satın almalar vardır; bunları tamamen
-Google Play yürütür ve ödeme bilgileriniz uygulamaya hiç ulaşmaz.</p>
+veya paylaşmaz</strong> ve geliştiriciye ait hiçbir sunucu yoktur. Oyunda isteğe bağlı uygulama içi
+satın almalar ve isteğe bağlı <strong>Play Games Services</strong> girişi vardır; bunların ikisini de
+tamamen Google yürütür. Ödeme bilgileriniz uygulamaya hiç ulaşmaz. Play Games'e girmeyi
+seçerseniz oyuncu kimliğiniz ve oyun ilerlemeniz Google Play Games altyapısında işlenir —
+ayrıntısı <a href="#pgs-tr">11. bölümde</a>.</p>
 
 <h2>1. Toplanan veriler</h2>
-<p><strong>Hiçbiri.</strong> Uygulama; adınızı, e-posta adresinizi, konumunuzu, telefon numaranızı,
-rehberinizi, fotoğraflarınızı, cihaz kimliğinizi, reklam kimliğinizi veya başka herhangi bir kişisel
-veriyi toplamaz. Kayıt olma veya hesap açma gerektirmez. Geliştiriciye ait hiçbir sunucu yoktur.</p>
+<p><strong>Geliştirici hiçbir veri toplamaz.</strong> Uygulama; adınızı, e-posta adresinizi, konumunuzu,
+telefon numaranızı, rehberinizi, fotoğraflarınızı, cihaz kimliğinizi, reklam kimliğinizi veya başka
+herhangi bir kişisel veriyi toplamaz. Uygulamayı kullanmak için kayıt olma veya hesap açma
+gerekmez. Geliştiriciye ait hiçbir sunucu yoktur; toplanan hiçbir veri geliştiriciye ulaşmaz.</p>
+<p>Tek istisna isteğe bağlıdır: Ayarlar'dan <strong>Play Games Services'e giriş yaparsanız</strong>,
+Google oyuncu kimliğiniz ve oyun ilerlemeniz Google tarafından işlenir (bkz.
+<a href="#pgs-tr">bölüm 11</a>). Giriş yapmazsanız cihazınızdan hiçbir veri çıkmaz.</p>
 
 <h2>2. Oyun kayıtları</h2>
 <p>Oyun ilerlemeniz (Ruh Çekirdeği miktarı, açılan karakter ve eserler, başarımlar, ayarlar)
-yalnızca <strong>kendi cihazınızın yerel depolama alanında</strong> tutulur. Bu veriler hiçbir sunucuya
-gönderilmez ve geliştirici tarafından görülemez. Uygulamayı kaldırdığınızda bu kayıtlar
-cihazınızdan silinir.</p>
+<strong>kendi cihazınızın yerel depolama alanında</strong> tutulur. Bu veriler geliştiriciye ait hiçbir
+sunucuya gönderilmez ve geliştirici tarafından görülemez. Uygulamayı kaldırdığınızda cihazdaki
+bu kayıtlar silinir.</p>
+<p>Play Games Services'e giriş yapıp <strong>Buluta Yedekle</strong> özelliğini kullanırsanız, kaydınızın
+bir kopyası Google'ın sunucularında saklanır ve diğer cihazlarınıza aktarılabilir. Bu tamamen
+sizin seçiminizdir; yedekleme de geri yükleme de asla kendiliğinden yapılmaz.</p>
 
 <h2>3. Uygulama içi satın almalar</h2>
 <p>Oyunda isteğe bağlı satın alınabilir ürünler bulunur. Bu işlemlerin tamamını
@@ -62,8 +72,9 @@ cihazınızdan silinir.</p>
 
 <h2>4. İnternet bağlantısı</h2>
 <p>Oyun çevrimdışı oynanır; oynanışın hiçbir bölümü internet gerektirmez. Uygulama internete
-<strong>yalnızca satın alma işlemleri ve daha önce alınmış ürünlerin geri yüklenmesi için</strong>
-bağlanır. Başka hiçbir veri indirilmez veya yüklenmez.</p>
+<strong>yalnızca satın alma işlemleri, daha önce alınmış ürünlerin geri yüklenmesi ve — giriş
+yapmayı seçtiyseniz — Play Games Services özellikleri (başarım senkronu, liderlik tabloları,
+bulut kayıt) için</strong> bağlanır. Başka hiçbir veri indirilmez veya yüklenmez.</p>
 
 <h2>5. Reklam ve analitik</h2>
 <p>Uygulamada <strong>reklam yoktur</strong>. Google Analytics, Firebase, Facebook SDK veya benzeri
@@ -74,19 +85,22 @@ hiçbir izleme/analitik aracı kullanılmaz. Reklam kimliği (AD_ID) istenmez ve
   <li><code>VIBRATE</code> (Titreşim) — yalnızca oyun içi dokunma geri bildirimi için kullanılır.
       Ayarlar bölümünden kapatılabilir. Bu izin hiçbir veri okumaz.</li>
   <li><code>INTERNET</code> ve <code>ACCESS_NETWORK_STATE</code> — yalnızca Google Play satın alma
-      işlemleri için kullanılır.</li>
+      işlemleri ve isteğe bağlı Play Games Services özellikleri için kullanılır.</li>
   <li><code>com.android.vending.BILLING</code> — Google Play üzerinden satın alma yapabilmek için
       gereken izin.</li>
 </ul>
 
 <h2>7. Çocuklar</h2>
 <p>Oyun çocuklara yönelik olarak tasarlanmamıştır; hedef kitlesi <strong>13 yaş ve üzeridir</strong>.
-Buna rağmen uygulama, çocuklar dâhil hiç kimseden hiçbir veri toplamaz. Veri toplanmadığı
-için COPPA ve GDPR-K kapsamındaki veri yükümlülükleri doğmaz.</p>
+Geliştirici, çocuklar dâhil hiç kimseden hiçbir veri toplamaz. Play Games Services girişi
+isteğe bağlıdır ve Google hesabı gerektirir; bu hesapların yaş kuralları Google tarafından
+yürütülür. Giriş yapılmadığında cihazdan hiçbir veri çıkmaz.</p>
 
 <h2>8. Üçüncü taraflarla paylaşım</h2>
-<p>Geliştirici tarafından toplanan veri olmadığı için üçüncü taraflarla paylaşılan hiçbir veri
-yoktur. Satın alma işlemlerinde tarafınızla muhatap olan taraf Google Play'dir.</p>
+<p>Geliştirici hiçbir veri toplamadığı için geliştirici tarafından üçüncü taraflarla paylaşılan
+hiçbir veri yoktur. Satın alma işlemlerinde ve Play Games Services kullanımında tarafınızla
+muhatap olan taraf <strong>Google</strong>'dır; bu verileri Google kendi gizlilik politikası kapsamında
+işler ve reklam amacıyla kullanılmaz.</p>
 
 <h2>9. Değişiklikler</h2>
 <p>Bu politika güncellenirse, bu sayfadaki "son güncelleme" tarihi değiştirilerek yayımlanır.</p>
@@ -94,47 +108,51 @@ yoktur. Satın alma işlemlerinde tarafınızla muhatap olan taraf Google Play'd
 <h2>10. İletişim</h2>
 <p>Soru ve talepleriniz için: <a href="mailto:asilturkekole@gmail.com">asilturkekole@gmail.com</a></p>
 
-<!-- ===================================================================
-     PLAY GAMES SERVICES AÇILDIĞINDA (games_ids.xml doldurulup yeni
-     versionCode yayınlandığında) AŞAĞIDAKİ BÖLÜMÜ YORUMDAN ÇIKAR ve
-     "son güncelleme" tarihini değiştir. ŞU ANDA PGS KAPALI olduğu için
-     yayınlanan metinde yer ALMAMALIDIR — olmayan bir özelliği anlatmak
-     da yanlış beyandır.
-
-<h2>11. Play Games Services (isteğe bağlı)</h2>
+<h2 id="pgs-tr">11. Play Games Services (isteğe bağlı)</h2>
 <p>Ayarlar bölümünden Play Games Services'e giriş yapmayı seçerseniz:</p>
 <ul>
   <li><strong>Google oyuncu kimliğiniz</strong> (Play Games hesabınıza ait takma ad ve kimlik)
       başarımların ve liderlik tablosu kayıtlarının size bağlanması için kullanılır.</li>
+  <li><strong>Oyun ilerlemeniz</strong> (başarım durumu ve liderlik tablosu skorları) Play Games
+      hesabınıza işlenir; böylece cihaz değiştirdiğinizde kaybolmaz.</li>
   <li><strong>Bulut kayıt</strong> özelliğini kullanırsanız oyun ilerlemeniz Google'ın
       sunucularında saklanır ve başka cihazlarınıza aktarılabilir.</li>
   <li>Bu verileri geliştirici görmez; Google Play Games altyapısında kalır ve aktarım
-      sırasında şifrelenir.</li>
+      sırasında şifrelenir. Reklam veya pazarlama amacıyla kullanılmaz, satılmaz.</li>
   <li><strong>Tamamen isteğe bağlıdır.</strong> Giriş yapmazsanız hiçbir veri cihazınızdan
       çıkmaz ve oyunun tamamı yine oynanabilir.</li>
-  <li>Silmek isterseniz: Play Games uygulaması → Ayarlar → Oyun verilerini sil.</li>
+  <li>Silmek isterseniz: Play Games uygulaması → Ayarlar → Oyun verilerini sil. Bu işlem
+      oyuncu kimliğinize bağlı başarım, skor ve bulut kayıt verisini kaldırır.</li>
 </ul>
-     =================================================================== -->
 
 <hr>
 
 <h1 id="en">Uzak Doğu'nun Ruhu — Privacy Policy (English)</h1>
-<p class="sub">Last updated: 14 August 2026 · Developer: SatiricKarma63 · Package: <code>com.satirickarma63.udh</code></p>
+<p class="sub">Last updated: 15 August 2026 · Developer: SatiricKarma63 · Package: <code>com.satirickarma63.udh</code></p>
 
 <p>This privacy policy applies to the mobile game <strong>Uzak Doğu'nun Ruhu</strong> ("Spirit of the
 Far East") developed by SatiricKarma63. In short: <strong>the developer does not collect, store or
-share any personal data.</strong> The game offers optional in-app purchases, which are handled
-entirely by Google Play; your payment details never reach the app.</p>
+share any personal data</strong> and operates no servers. The game offers optional in-app purchases
+and an optional <strong>Play Games Services</strong> sign-in, both handled entirely by Google. Your
+payment details never reach the app. If you choose to sign in to Play Games, your player ID and
+game progress are processed by Google Play Games — see <a href="#pgs-en">section 11</a>.</p>
 
 <h2>1. Data we collect</h2>
-<p><strong>None.</strong> The app does not collect your name, email, location, phone number, contacts,
-photos, advertising ID, device identifiers or any other personal information. No account or
-sign-up is required. The developer operates no servers.</p>
+<p><strong>The developer collects nothing.</strong> The app does not collect your name, email, location,
+phone number, contacts, photos, advertising ID, device identifiers or any other personal
+information. No account or sign-up is required to play. The developer operates no servers, so no
+data reaches the developer.</p>
+<p>There is one optional exception: if you <strong>sign in to Play Games Services</strong> from the
+Settings screen, your Google player ID and game progress are processed by Google (see
+<a href="#pgs-en">section 11</a>). If you do not sign in, nothing leaves your device.</p>
 
 <h2>2. Game saves</h2>
 <p>Your progress (currency, unlocked characters and artifacts, achievements, settings) is stored
-<strong>only in local storage on your own device</strong>. It is never transmitted to any server and is
-not accessible to the developer. Uninstalling the app deletes this data.</p>
+<strong>in local storage on your own device</strong>. It is never transmitted to any developer-operated
+server and is not accessible to the developer. Uninstalling the app deletes this local data.</p>
+<p>If you sign in to Play Games Services and use <strong>cloud save</strong>, a copy of your save is
+stored on Google's servers and can be carried to your other devices. This is entirely your choice;
+neither backup nor restore ever happens automatically.</p>
 
 <h2>3. In-app purchases</h2>
 <p>The game offers optional purchasable items. These transactions are handled entirely by
@@ -153,8 +171,9 @@ not accessible to the developer. Uninstalling the app deletes this data.</p>
 
 <h2>4. Internet access</h2>
 <p>The game is played offline; no part of the gameplay requires a connection. The app goes online
-<strong>only for purchase transactions and for restoring items you have already bought</strong>. No other
-data is downloaded or uploaded.</p>
+<strong>only for purchase transactions, for restoring items you have already bought, and — if you
+have chosen to sign in — for Play Games Services features (achievement sync, leaderboards, cloud
+save)</strong>. No other data is downloaded or uploaded.</p>
 
 <h2>5. Ads and analytics</h2>
 <p>There are <strong>no ads</strong> and no analytics or tracking SDKs (no Google Analytics, Firebase,
@@ -164,18 +183,21 @@ Facebook SDK, etc.). The advertising ID (AD_ID) is neither requested nor read.</
 <ul>
   <li><code>VIBRATE</code> — used solely for in-game haptic feedback and can be disabled in Settings.
       It does not read any data.</li>
-  <li><code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code> — used only for Google Play purchases.</li>
+  <li><code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code> — used only for Google Play purchases
+      and the optional Play Games Services features.</li>
   <li><code>com.android.vending.BILLING</code> — required to offer purchases through Google Play.</li>
 </ul>
 
 <h2>7. Children</h2>
-<p>The game is not directed to children; its target audience is <strong>13 and older</strong>.
-Regardless, no data whatsoever is collected from any user, including children, so the app falls
-outside the scope of COPPA / GDPR-K data-collection requirements.</p>
+<p>The game is not directed to children; its target audience is <strong>13 and older</strong>. The
+developer collects no data from any user, including children. Play Games Services sign-in is
+optional and requires a Google account, whose age rules are enforced by Google. If you do not
+sign in, nothing leaves your device.</p>
 
 <h2>8. Sharing with third parties</h2>
-<p>No data is collected by the developer, therefore no data is shared with anyone. For purchases,
-your counterparty is Google Play.</p>
+<p>The developer collects no data, therefore the developer shares no data with anyone. For
+purchases and for Play Games Services, your counterparty is <strong>Google</strong>, which processes
+that data under its own privacy policy. It is not used for advertising and is never sold.</p>
 
 <h2>9. Changes</h2>
 <p>If this policy changes, the updated version will be published on this page with a new
@@ -184,26 +206,22 @@ your counterparty is Google Play.</p>
 <h2>10. Contact</h2>
 <p><a href="mailto:asilturkekole@gmail.com">asilturkekole@gmail.com</a></p>
 
-<!-- ===================================================================
-     WHEN PLAY GAMES SERVICES IS ENABLED, uncomment the block below (and
-     its Turkish counterpart above) and update the "last updated" date.
-     PGS is currently OFF in the shipped build, so this section must NOT
-     appear in the published policy.
-
-<h2>11. Play Games Services (optional)</h2>
+<h2 id="pgs-en">11. Play Games Services (optional)</h2>
 <p>If you choose to sign in to Play Games Services from the Settings screen:</p>
 <ul>
-  <li>Your <strong>Google player ID</strong> is used to attach achievements and leaderboard entries
-      to you.</li>
+  <li>Your <strong>Google player ID</strong> (the nickname and identifier of your Play Games account)
+      is used to attach achievements and leaderboard entries to you.</li>
+  <li>Your <strong>game progress</strong> (achievement state and leaderboard scores) is recorded against
+      your Play Games account so it is not lost when you change devices.</li>
   <li>If you use <strong>cloud save</strong>, your game progress is stored on Google's servers so it
       can be carried to your other devices.</li>
   <li>The developer cannot see this data; it stays within Google Play Games and is encrypted
-      in transit.</li>
+      in transit. It is not used for advertising or marketing, and is never sold.</li>
   <li>It is <strong>entirely optional</strong>. If you do not sign in, nothing leaves your device and
       the whole game remains playable.</li>
-  <li>To delete it: Play Games app → Settings → Delete game data.</li>
+  <li>To delete it: Play Games app → Settings → Delete game data. This removes the achievements,
+      scores and cloud saves tied to your player ID.</li>
 </ul>
-     =================================================================== -->
 
 </body>
 </html>
