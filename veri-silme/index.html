@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Uzak Doğu'nun Ruhu — Veri Silme Talebi / Data Deletion Request</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0 auto; padding: 32px 20px 64px; max-width: 760px;
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65; color: #1a1a1a; background: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e6e6; background: #101014; }
+    a { color: #7cc4ff; }
+    hr { border-color: #333; }
+    th, td { border-color: #333 !important; }
+  }
+  h1 { font-size: 1.6rem; margin-bottom: .2em; }
+  h2 { font-size: 1.15rem; margin-top: 2em; }
+  .sub { opacity: .7; margin-top: 0; }
+  hr { margin: 3em 0; border: 0; border-top: 1px solid #ddd; }
+  ul, ol { padding-left: 1.3em; }
+  li { margin: .35em 0; }
+  code { background: rgba(128,128,128,.18); padding: .1em .35em; border-radius: 4px; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  th, td { border: 1px solid #ddd; padding: .5em .7em; text-align: left; vertical-align: top; }
+  th { background: rgba(128,128,128,.12); }
+  .box { border-left: 3px solid #7cc4ff; padding: .1em 1em; margin: 1.5em 0;
+         background: rgba(128,128,128,.08); border-radius: 0 6px 6px 0; }
+</style>
+</head>
+<body>
+
+<h1>Uzak Doğu'nun Ruhu — Veri Silme Talebi</h1>
+<p class="sub">Uygulama: <strong>Uzak Doğu'nun Ruhu</strong> · Geliştirici: <strong>SatiricKarma63</strong> ·
+Paket adı: <code>com.satirickarma63.udh</code> · Son güncelleme: 15 Ağustos 2026</p>
+
+<p>Bu sayfa, <strong>Uzak Doğu'nun Ruhu</strong> oyununa ait verilerin nasıl silineceğini anlatır.
+Geliştirici <strong>SatiricKarma63</strong>'ün kendine ait bir sunucusu yoktur ve hiçbir kişisel veriyi
+toplamaz veya saklamaz. Silinebilecek veriler yalnızca iki yerdedir: <strong>kendi cihazında</strong> ve —
+Play Games Services'e giriş yapmayı seçtiysen — <strong>Google Play Games hesabında</strong>.</p>
+
+<div class="box">
+<p>Play Games Services girişi <strong>isteğe bağlıdır</strong>. Hiç giriş yapmadıysan cihazından
+hiçbir veri çıkmamıştır; silmen gereken tek şey cihazdaki yerel kayıttır (aşağıda 2. yol).</p>
+</div>
+
+<h2>1. Play Games verilerini silmek (oyuncu kimliği, başarımlar, skorlar, bulut kayıt)</h2>
+<ol>
+  <li><strong>Google Play Games</strong> uygulamasını aç.</li>
+  <li>Sağ üstteki <strong>profil resmine</strong> dokun.</li>
+  <li><strong>Ayarlar</strong>'a gir.</li>
+  <li><strong>Play Games hesabını ve verilerini sil</strong> seçeneğine dokun.</li>
+  <li><strong>Tek tek oyun verilerini sil</strong> bölümünden <strong>Uzak Doğu'nun Ruhu</strong>'nu seç.</li>
+  <li><strong>Sil</strong>'e dokunup onayla.</li>
+</ol>
+<p>Bu işlem, oyuncu kimliğine bağlı <strong>başarım durumunu, liderlik tablosu skorlarını ve bulut
+kayıtlarını</strong> kaldırır. Menü adları Play Games uygulamasının sürümüne göre bir miktar
+değişebilir; aynı seçenek her sürümde Ayarlar altında bulunur.</p>
+
+<h2>2. Cihazındaki yerel oyun kaydını silmek</h2>
+<ul>
+  <li>Uygulamayı kaldırmak yerel kaydı da siler; <strong>veya</strong></li>
+  <li>Android <strong>Ayarlar → Uygulamalar → Uzak Doğu'nun Ruhu → Depolama → Verileri temizle</strong>.</li>
+</ul>
+<p>Bu kayıt yalnızca senin cihazındadır, hiçbir sunucuya gönderilmez ve geliştirici tarafından
+görülemez.</p>
+
+<h2>3. E-posta ile silme talebi</h2>
+<p>Yukarıdaki adımları uygulayamıyorsan ya da bir sorun yaşarsan doğrudan yaz:
+<a href="mailto:asilturkekole@gmail.com">asilturkekole@gmail.com</a></p>
+<p>Konu satırına <strong>"Veri silme talebi"</strong> yaz ve Play Games takma adını ekle. Talepler
+<strong>en geç 30 gün içinde</strong> yanıtlanır ve sonuçlandırılır.</p>
+
+<h2>4. Hangi veriler silinir, hangileri saklanır</h2>
+<table>
+  <tr>
+    <th>Veri</th>
+    <th>Nerede tutulur</th>
+    <th>Silme ve saklama</th>
+  </tr>
+  <tr>
+    <td>Google oyuncu kimliği (Play Games takma adı ve kimliği)</td>
+    <td>Google Play Games</td>
+    <td><strong>Silinir</strong> — 1. yoldaki adımlarla. Geliştiricide kopyası yoktur.</td>
+  </tr>
+  <tr>
+    <td>Başarım durumu ve liderlik tablosu skorları</td>
+    <td>Google Play Games</td>
+    <td><strong>Silinir</strong> — 1. yoldaki adımlarla. Silinen skor liderlik tablosundan da kalkar.</td>
+  </tr>
+  <tr>
+    <td>Bulut kayıt (oyun ilerlemesi)</td>
+    <td>Google Play Games</td>
+    <td><strong>Silinir</strong> — 1. yoldaki adımlarla.</td>
+  </tr>
+  <tr>
+    <td>Yerel oyun kaydı (Ruh Çekirdeği, karakterler, eserler, ayarlar)</td>
+    <td>Yalnızca kendi cihazın</td>
+    <td><strong>Silinir</strong> — 2. yoldaki adımlarla. Ek saklama yoktur.</td>
+  </tr>
+  <tr>
+    <td>Satın alma kayıtları (hangi ürüne sahip olduğun)</td>
+    <td>Google Play</td>
+    <td><strong>Saklanır</strong> — işlemi Google Play yürütür ve faturalandırma kayıtlarını
+        yasal yükümlülükleri gereği tutar. Geliştirici bu kayıtlara sahip değildir ve silemez;
+        talebini <a href="https://support.google.com/googleplay">Google Play desteğine</a>
+        iletmen gerekir.</td>
+  </tr>
+</table>
+
+<p><strong>Geliştiricinin sakladığı veri yoktur.</strong> SatiricKarma63'ün sunucusu, veritabanı,
+analitik veya reklam altyapısı bulunmaz; dolayısıyla geliştirici tarafında silinecek ya da
+saklanacak bir kopya oluşmaz. Play Games tarafında silinen verilerin Google'ın kendi sistem
+yedeklerinden tamamen kalkması, Google'ın saklama politikasına tabidir.</p>
+
+<h2>5. İlgili sayfalar</h2>
+<ul>
+  <li><a href="../gizlilik-politikasi/">Gizlilik Politikası</a> — bölüm 11, Play Games Services</li>
+  <li><a href="../">Uzak Doğu'nun Ruhu ana sayfası</a></li>
+</ul>
+
+<hr>
+
+<h1 id="en">Uzak Doğu'nun Ruhu — Data Deletion Request</h1>
+<p class="sub">App: <strong>Uzak Doğu'nun Ruhu</strong> ("Spirit of the Far East") · Developer:
+<strong>SatiricKarma63</strong> · Package: <code>com.satirickarma63.udh</code> ·
+Last updated: 15 August 2026</p>
+
+<p>This page explains how to delete data associated with <strong>Uzak Doğu'nun Ruhu</strong>. The
+developer, <strong>SatiricKarma63</strong>, operates no servers and collects or stores no personal
+data. Data that can be deleted exists in only two places: <strong>on your own device</strong> and — if
+you chose to sign in to Play Games Services — <strong>in your Google Play Games account</strong>.</p>
+
+<div class="box">
+<p>Play Games Services sign-in is <strong>optional</strong>. If you never signed in, nothing ever left
+your device, and the only thing to delete is the local save (method 2 below).</p>
+</div>
+
+<h2>1. Deleting Play Games data (player ID, achievements, scores, cloud saves)</h2>
+<ol>
+  <li>Open the <strong>Google Play Games</strong> app.</li>
+  <li>Tap your <strong>profile picture</strong> (top right).</li>
+  <li>Go to <strong>Settings</strong>.</li>
+  <li>Tap <strong>Delete Play Games account &amp; data</strong>.</li>
+  <li>Under <strong>Delete individual game data</strong>, select <strong>Uzak Doğu'nun Ruhu</strong>.</li>
+  <li>Tap <strong>Delete</strong> and confirm.</li>
+</ol>
+<p>This removes the <strong>achievement state, leaderboard scores and cloud saves</strong> tied to your
+player ID. Menu labels may differ slightly between Play Games versions; the option is always
+under Settings.</p>
+
+<h2>2. Deleting the local save on your device</h2>
+<ul>
+  <li>Uninstalling the app deletes the local save; <strong>or</strong></li>
+  <li>Android <strong>Settings → Apps → Uzak Doğu'nun Ruhu → Storage → Clear data</strong>.</li>
+</ul>
+<p>This save exists only on your device, is never sent to any server and is not visible to the
+developer.</p>
+
+<h2>3. Requesting deletion by email</h2>
+<p>If you cannot follow the steps above, or something goes wrong, write directly to
+<a href="mailto:asilturkekole@gmail.com">asilturkekole@gmail.com</a> with the subject
+<strong>"Data deletion request"</strong> and your Play Games nickname. Requests are answered and
+completed <strong>within 30 days at the latest</strong>.</p>
+
+<h2>4. What is deleted and what is retained</h2>
+<table>
+  <tr>
+    <th>Data</th>
+    <th>Where it lives</th>
+    <th>Deletion &amp; retention</th>
+  </tr>
+  <tr>
+    <td>Google player ID (Play Games nickname and identifier)</td>
+    <td>Google Play Games</td>
+    <td><strong>Deleted</strong> via method 1. The developer holds no copy.</td>
+  </tr>
+  <tr>
+    <td>Achievement state and leaderboard scores</td>
+    <td>Google Play Games</td>
+    <td><strong>Deleted</strong> via method 1; scores are removed from the leaderboards too.</td>
+  </tr>
+  <tr>
+    <td>Cloud save (game progress)</td>
+    <td>Google Play Games</td>
+    <td><strong>Deleted</strong> via method 1.</td>
+  </tr>
+  <tr>
+    <td>Local save (currency, characters, artifacts, settings)</td>
+    <td>Your device only</td>
+    <td><strong>Deleted</strong> via method 2. No additional retention.</td>
+  </tr>
+  <tr>
+    <td>Purchase records (which items you own)</td>
+    <td>Google Play</td>
+    <td><strong>Retained</strong> — transactions are handled by Google Play, which keeps billing
+        records to meet its legal obligations. The developer neither holds nor can delete these;
+        contact <a href="https://support.google.com/googleplay">Google Play support</a>.</td>
+  </tr>
+</table>
+
+<p><strong>The developer retains nothing.</strong> SatiricKarma63 runs no server, database, analytics or
+advertising infrastructure, so no copy is ever created on the developer's side to delete or
+retain. How long deleted Play Games data persists in Google's own system backups is governed by
+Google's retention policy.</p>
+
+<h2>5. Related pages</h2>
+<ul>
+  <li><a href="../gizlilik-politikasi/#en">Privacy Policy</a> — section 11, Play Games Services</li>
+  <li><a href="../">Uzak Doğu'nun Ruhu home page</a></li>
+</ul>
+
+</body>
+</html>
